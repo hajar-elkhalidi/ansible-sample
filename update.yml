@@ -1,0 +1,20 @@
+---
+
+- hosts: all
+  become: true
+  pre_tasks:
+
+    - name: update repos index & uprade
+      apt:
+          update_cache: yes
+          upgrade: yes
+
+- hosts: ubuntu
+  become: true
+  tasks:
+     
+    - name: autoremove & autoclean
+      apt:
+          autoclean: yes
+          autoremove: yes
+
