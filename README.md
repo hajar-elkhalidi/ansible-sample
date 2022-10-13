@@ -10,7 +10,7 @@ You can test this playbook by running this command:
 
     ansible-playbook --ask-become-pass update.yml
 Make sure to: 
->* Change IPs to yours 
+>* Change IPs to yours in **inventory**
 >* Change the path to your ssh key in **ansible.cfg**
-> * If you are using a Linux distribution that uses package management other than apt, change it in **update.yml**
-> * YAML is **case sensitive**
+>* If you are using a Linux distribution that uses package management other than apt, change it in **update.yml**
+>* YAML is **case sensitive**
